@@ -1,0 +1,320 @@
+2025-12-10 10:24:23.987 +07:00 [INF] Executed DbCommand (174ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-10 10:24:24.294 +07:00 [INF] Executed DbCommand (131ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-10 10:24:24.306 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-10 10:24:24.318 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-10 10:24:24.562 +07:00 [INF] Executed DbCommand (190ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-10 10:24:24.600 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-10 10:24:24.950 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-10 10:24:25.243 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-10 10:24:25.402 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-10 10:24:25.405 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-10 10:24:25.522 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-10 10:24:25.525 +07:00 [INF] Hosting environment: Development
+2025-12-10 10:24:25.527 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-10 10:24:30.423 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/swagger/index.html - null null
+2025-12-10 10:24:31.145 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/swagger/index.html - 200 null text/html;charset=utf-8 733.8403ms
+2025-12-10 10:24:31.336 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-10 10:24:31.356 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/_vs/browserLink - null null
+2025-12-10 10:24:31.372 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 35.8961ms
+2025-12-10 10:24:31.651 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 295.2339ms
+2025-12-10 10:24:31.815 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/swagger/v1/swagger.json - null null
+2025-12-10 10:24:31.879 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.4946ms
+2025-12-10 10:25:22.432 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/api/Posts - null null
+2025-12-10 10:25:22.563 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.PostsController.GetAll (UnifiedLearningApi)'
+2025-12-10 10:25:22.744 +07:00 [INF] Route matched with {action = "GetAll", controller = "Posts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller UnifiedLearningApi.Controllers.PostsController (UnifiedLearningApi).
+2025-12-10 10:25:23.780 +07:00 [INF] Executed DbCommand (227ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Content], [p].[Title]
+FROM [Posts] AS [p]
+2025-12-10 10:25:24.003 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UnifiedLearningApi.DTOs.PostDto, UnifiedLearningApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-10 10:25:24.057 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.PostsController.GetAll (UnifiedLearningApi) in 1294.2652ms
+2025-12-10 10:25:24.063 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.PostsController.GetAll (UnifiedLearningApi)'
+2025-12-10 10:25:24.075 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/api/Posts - 200 null application/json; charset=utf-8 1652.1296ms
+2025-12-10 17:42:26.930 +07:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-10 17:42:27.117 +07:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-10 17:42:27.125 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-10 17:42:27.129 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-10 17:42:27.301 +07:00 [INF] Executed DbCommand (125ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-10 17:42:27.347 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-10 17:42:27.658 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-10 17:42:27.964 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-10 17:42:28.098 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-10 17:42:28.100 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-10 17:42:28.174 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-10 17:42:28.177 +07:00 [INF] Hosting environment: Development
+2025-12-10 17:42:28.189 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-10 17:42:30.105 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/swagger/index.html - null null
+2025-12-10 17:42:30.699 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/swagger/index.html - 200 null text/html;charset=utf-8 616.1773ms
+2025-12-10 17:42:30.820 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-10 17:42:30.824 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/_vs/browserLink - null null
+2025-12-10 17:42:30.833 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/_framework/aspnetcore-browser-refresh.js - 200 13771 application/javascript; charset=utf-8 13.5938ms
+2025-12-10 17:42:31.008 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 184.7394ms
+2025-12-10 17:42:31.094 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/swagger/v1/swagger.json - null null
+2025-12-10 17:42:31.141 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.9446ms
+2025-12-10 17:44:04.725 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5079/api/Auth/register - application/json 82
+2025-12-10 17:44:04.778 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi)'
+2025-12-10 17:44:04.865 +07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(UnifiedLearningApi.DTOs.Auth.RegisterDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 17:44:05.638 +07:00 [INF] Executed DbCommand (134ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-10 17:44:06.410 +07:00 [INF] Executed DbCommand (67ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [PasswordHash], [Role])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-12-10 17:44:06.480 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-12-10 17:44:06.493 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi) in 1612.3871ms
+2025-12-10 17:44:06.497 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi)'
+2025-12-10 17:44:06.511 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5079/api/Auth/register - 200 null text/plain; charset=utf-8 1786.1156ms
+2025-12-10 17:44:42.471 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5079/api/Auth/login - application/json 66
+2025-12-10 17:44:42.482 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 17:44:42.491 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(UnifiedLearningApi.DTOs.Auth.LoginDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 17:44:42.973 +07:00 [INF] Executed DbCommand (96ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[PasswordHash], [t].[Role], [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+    FROM [User] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshTokens] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-12-10 17:44:42.987 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 17:44:43.027 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi) in 532.8593ms
+2025-12-10 17:44:43.032 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 17:44:43.035 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5079/api/Auth/login - 401 null application/problem+json; charset=utf-8 566.6664ms
+2025-12-10 17:44:58.122 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5079/api/Auth/login - application/json 66
+2025-12-10 17:44:58.129 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 17:44:58.131 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(UnifiedLearningApi.DTOs.Auth.LoginDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 17:44:58.160 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[PasswordHash], [t].[Role], [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+    FROM [User] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshTokens] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-12-10 17:44:58.165 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 17:44:58.170 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi) in 34.2576ms
+2025-12-10 17:44:58.172 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 17:44:58.174 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5079/api/Auth/login - 401 null application/problem+json; charset=utf-8 51.5351ms
+2025-12-10 17:45:29.533 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5079/api/Auth/login - application/json 66
+2025-12-10 17:45:29.549 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 17:45:29.552 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(UnifiedLearningApi.DTOs.Auth.LoginDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 17:45:29.578 +07:00 [INF] Executed DbCommand (19ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[PasswordHash], [t].[Role], [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+    FROM [User] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshTokens] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-12-10 17:45:29.583 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 17:45:29.586 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi) in 28.9622ms
+2025-12-10 17:45:29.589 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 17:45:29.591 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5079/api/Auth/login - 401 null application/problem+json; charset=utf-8 62.5932ms
+2025-12-10 17:45:43.264 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5079/api/Auth/refresh-token?token=2 - null 0
+2025-12-10 17:45:43.268 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 17:45:43.280 +07:00 [INF] Route matched with {action = "Refresh", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(System.String) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 17:45:43.471 +07:00 [INF] Executed DbCommand (124ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId], [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+FROM [RefreshTokens] AS [r]
+INNER JOIN [User] AS [u] ON [r].[UserId] = [u].[Id]
+WHERE [r].[Token] = @__refreshToken_0 AND [r].[IsRevoked] = CAST(0 AS bit) AND [r].[ExpiresAt] > GETUTCDATE()
+2025-12-10 17:45:43.476 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 17:45:43.479 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi) in 196.8583ms
+2025-12-10 17:45:43.482 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 17:45:43.484 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5079/api/Auth/refresh-token?token=2 - 401 null application/problem+json; charset=utf-8 219.8351ms
+2025-12-10 17:53:24.323 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5079/api/Auth/refresh-token?token=tester - null 0
+2025-12-10 17:53:24.362 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 17:53:24.382 +07:00 [INF] Route matched with {action = "Refresh", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(System.String) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 17:53:24.595 +07:00 [INF] Executed DbCommand (40ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId], [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+FROM [RefreshTokens] AS [r]
+INNER JOIN [User] AS [u] ON [r].[UserId] = [u].[Id]
+WHERE [r].[Token] = @__refreshToken_0 AND [r].[IsRevoked] = CAST(0 AS bit) AND [r].[ExpiresAt] > GETUTCDATE()
+2025-12-10 17:53:24.609 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 17:53:24.629 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi) in 239.4862ms
+2025-12-10 17:53:24.641 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 17:53:24.645 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5079/api/Auth/refresh-token?token=tester - 401 null application/problem+json; charset=utf-8 335.0711ms
+2025-12-10 17:53:39.681 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5079/api/Auth/login - application/json 47
+2025-12-10 17:53:39.686 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 17:53:39.688 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(UnifiedLearningApi.DTOs.Auth.LoginDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 17:53:39.726 +07:00 [INF] Executed DbCommand (25ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[PasswordHash], [t].[Role], [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+    FROM [User] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshTokens] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-12-10 17:53:39.730 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 17:53:39.733 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi) in 42.9113ms
+2025-12-10 17:53:39.737 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 17:53:39.738 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5079/api/Auth/login - 401 null application/problem+json; charset=utf-8 57.3153ms
+2025-12-10 20:10:10.013 +07:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-10 20:10:10.581 +07:00 [INF] Executed DbCommand (432ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-10 20:10:10.590 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-10 20:10:10.600 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-10 20:10:12.175 +07:00 [INF] Executed DbCommand (1,528ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-10 20:10:12.237 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-10 20:10:12.356 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-10 20:10:12.422 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-10 20:10:12.500 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-10 20:10:12.502 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-10 20:10:12.504 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-10 20:10:12.505 +07:00 [INF] Hosting environment: Development
+2025-12-10 20:10:12.506 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-10 20:10:46.907 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/ - null null
+2025-12-10 20:10:47.044 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/ - 404 0 null 139.9713ms
+2025-12-10 20:10:47.057 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5079/, Response status code: 404
+2025-12-10 20:10:57.418 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/ - null null
+2025-12-10 20:10:57.436 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/ - 404 0 null 17.2852ms
+2025-12-10 20:10:57.445 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7166/, Response status code: 404
+2025-12-10 20:11:13.170 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-10 20:11:13.408 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 238.2602ms
+2025-12-10 20:11:13.854 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-10 20:11:14.177 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 322.1311ms
+2025-12-10 20:21:19.884 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Auth/register - application/json 81
+2025-12-10 20:21:19.912 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi)'
+2025-12-10 20:21:19.992 +07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(UnifiedLearningApi.DTOs.Auth.RegisterDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 20:21:20.924 +07:00 [INF] Executed DbCommand (84ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-10 20:21:21.978 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [PasswordHash], [Role])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-12-10 20:21:22.044 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-12-10 20:21:22.054 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi) in 2052.7659ms
+2025-12-10 20:21:22.057 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi)'
+2025-12-10 20:21:22.068 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Auth/register - 200 null text/plain; charset=utf-8 2183.5064ms
+2025-12-10 20:22:10.868 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Auth/login - application/json 63
+2025-12-10 20:22:10.877 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 20:22:10.891 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(UnifiedLearningApi.DTOs.Auth.LoginDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 20:22:11.311 +07:00 [INF] Executed DbCommand (24ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[PasswordHash], [t].[Role], [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+    FROM [User] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshTokens] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-12-10 20:22:11.860 +07:00 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-12-10 20:22:11.872 +07:00 [INF] Executing OkObjectResult, writing value of type 'UnifiedLearningApi.DTOs.Auth.AuthResponseDto'.
+2025-12-10 20:22:11.904 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi) in 1008.656ms
+2025-12-10 20:22:11.910 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-10 20:22:11.913 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Auth/login - 200 null application/json; charset=utf-8 1044.4939ms
+2025-12-10 20:24:07.013 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Auth/refresh-token?token=%22WLlC0hxr%2Ba%2BtROpUQWthlqXpOxt6zt4yYxZkXm%2Ba%2BIFhGEUkBnVIfsJaMc2%2BhfwiR7T3oVUHBL5SGbmWlJbvbQ%3D%3D%22 - null 0
+2025-12-10 20:24:07.020 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 20:24:07.037 +07:00 [INF] Route matched with {action = "Refresh", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(System.String) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 20:24:07.142 +07:00 [INF] Executed DbCommand (23ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId], [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+FROM [RefreshTokens] AS [r]
+INNER JOIN [User] AS [u] ON [r].[UserId] = [u].[Id]
+WHERE [r].[Token] = @__refreshToken_0 AND [r].[IsRevoked] = CAST(0 AS bit) AND [r].[ExpiresAt] > GETUTCDATE()
+2025-12-10 20:24:07.151 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 20:24:07.190 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi) in 144.4309ms
+2025-12-10 20:24:07.194 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 20:24:07.197 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Auth/refresh-token?token=%22WLlC0hxr%2Ba%2BtROpUQWthlqXpOxt6zt4yYxZkXm%2Ba%2BIFhGEUkBnVIfsJaMc2%2BhfwiR7T3oVUHBL5SGbmWlJbvbQ%3D%3D%22 - 401 null application/problem+json; charset=utf-8 184.0379ms
+2025-12-10 20:24:46.482 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Auth/refresh-token?token=token%3A%20%22WLlC0hxr%2Ba%2BtROpUQWthlqXpOxt6zt4yYxZkXm%2Ba%2BIFhGEUkBnVIfsJaMc2%2BhfwiR7T3oVUHBL5SGbmWlJbvbQ%3D%3D%22 - null 0
+2025-12-10 20:24:46.494 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 20:24:46.498 +07:00 [INF] Route matched with {action = "Refresh", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(System.String) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 20:24:46.522 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId], [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+FROM [RefreshTokens] AS [r]
+INNER JOIN [User] AS [u] ON [r].[UserId] = [u].[Id]
+WHERE [r].[Token] = @__refreshToken_0 AND [r].[IsRevoked] = CAST(0 AS bit) AND [r].[ExpiresAt] > GETUTCDATE()
+2025-12-10 20:24:46.530 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 20:24:46.533 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi) in 27.244ms
+2025-12-10 20:24:46.536 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 20:24:46.539 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Auth/refresh-token?token=token%3A%20%22WLlC0hxr%2Ba%2BtROpUQWthlqXpOxt6zt4yYxZkXm%2Ba%2BIFhGEUkBnVIfsJaMc2%2BhfwiR7T3oVUHBL5SGbmWlJbvbQ%3D%3D%22 - 401 null application/problem+json; charset=utf-8 57.4895ms
+2025-12-10 20:25:36.825 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Auth/refresh-token?token=token%3A%20WLLcLxhvn%2Ba%2BtR0IpQWyhtIaIPoxt62T4y9VzK0wn%2Ba%2B1Hf0cUkbRNv1F5JaM2%2BhfiviRl7BJoVUHBLS5QoBmlJbVqb__ - null 0
+2025-12-10 20:25:36.849 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 20:25:36.853 +07:00 [INF] Route matched with {action = "Refresh", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(System.String) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 20:25:36.881 +07:00 [INF] Executed DbCommand (20ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId], [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+FROM [RefreshTokens] AS [r]
+INNER JOIN [User] AS [u] ON [r].[UserId] = [u].[Id]
+WHERE [r].[Token] = @__refreshToken_0 AND [r].[IsRevoked] = CAST(0 AS bit) AND [r].[ExpiresAt] > GETUTCDATE()
+2025-12-10 20:25:36.887 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 20:25:36.890 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi) in 32.7515ms
+2025-12-10 20:25:36.893 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 20:25:36.895 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Auth/refresh-token?token=token%3A%20WLLcLxhvn%2Ba%2BtR0IpQWyhtIaIPoxt62T4y9VzK0wn%2Ba%2B1Hf0cUkbRNv1F5JaM2%2BhfiviRl7BJoVUHBLS5QoBmlJbVqb__ - 401 null application/problem+json; charset=utf-8 69.3517ms
+2025-12-10 20:26:02.823 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Auth/refresh-token?token=token%3A%20WLLcLxhvn%2Ba%2BtR0IpQWyhtIaIPoxt62T4y9VzK0wn%2Ba%2B1Hf0cUkbRNv1F5JaM2%2BhfiviRl7BJoVUHBLS5QoBmlJbVqb - null 0
+2025-12-10 20:26:02.844 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 20:26:02.849 +07:00 [INF] Route matched with {action = "Refresh", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refresh(System.String) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-10 20:26:02.857 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId], [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+FROM [RefreshTokens] AS [r]
+INNER JOIN [User] AS [u] ON [r].[UserId] = [u].[Id]
+WHERE [r].[Token] = @__refreshToken_0 AND [r].[IsRevoked] = CAST(0 AS bit) AND [r].[ExpiresAt] > GETUTCDATE()
+2025-12-10 20:26:02.861 +07:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-10 20:26:02.866 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi) in 14.0363ms
+2025-12-10 20:26:02.868 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Refresh (UnifiedLearningApi)'
+2025-12-10 20:26:02.870 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Auth/refresh-token?token=token%3A%20WLLcLxhvn%2Ba%2BtR0IpQWyhtIaIPoxt62T4y9VzK0wn%2Ba%2B1Hf0cUkbRNv1F5JaM2%2BhfiviRl7BJoVUHBLS5QoBmlJbVqb - 401 null application/problem+json; charset=utf-8 47.2337ms
+2025-12-10 21:58:30.982 +07:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-10 21:58:31.079 +07:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-10 21:58:31.084 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-10 21:58:31.086 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-10 21:58:31.231 +07:00 [INF] Executed DbCommand (118ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-10 21:58:31.246 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-10 21:58:31.335 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-10 21:58:31.407 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-10 21:58:31.463 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-10 21:58:31.464 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-10 21:58:31.465 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-10 21:58:31.465 +07:00 [INF] Hosting environment: Development
+2025-12-10 21:58:31.465 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-10 21:58:44.624 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-10 21:58:44.750 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 128.0535ms
+2025-12-10 21:58:44.969 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-10 21:58:45.156 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 186.1923ms

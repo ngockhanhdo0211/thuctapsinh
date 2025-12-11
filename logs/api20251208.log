@@ -1,0 +1,102 @@
+2025-12-08 14:44:25.133 +07:00 [INF] Executed DbCommand (69ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-08 14:44:25.465 +07:00 [INF] Executed DbCommand (132ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-08 14:44:25.473 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-08 14:44:25.477 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-08 14:44:25.711 +07:00 [INF] Executed DbCommand (188ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-08 14:44:25.763 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-08 14:44:26.507 +07:00 [INF] Executed DbCommand (143ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Posts] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-08 14:44:27.013 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-08 14:44:27.725 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-08 14:44:27.727 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-08 14:44:27.819 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-08 14:44:27.823 +07:00 [INF] Hosting environment: Development
+2025-12-08 14:44:27.825 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-08 14:44:30.219 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-08 14:44:30.732 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 551.0156ms
+2025-12-08 14:44:30.885 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/_vs/browserLink - null null
+2025-12-08 14:44:30.885 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-08 14:44:30.984 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 106.8398ms
+2025-12-08 14:44:31.135 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/_vs/browserLink - 200 null text/javascript; charset=UTF-8 250.0542ms
+2025-12-08 14:44:31.228 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-08 14:44:31.290 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.3098ms
+2025-12-08 14:57:29.562 +07:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-08 14:57:29.739 +07:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-08 14:57:29.749 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-08 14:57:29.756 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-08 14:57:29.889 +07:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-08 14:57:29.935 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-08 14:57:30.323 +07:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Posts] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-08 14:57:30.651 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-08 14:57:31.265 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-08 14:57:31.268 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-08 14:57:31.364 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-08 14:57:31.369 +07:00 [INF] Hosting environment: Development
+2025-12-08 14:57:31.372 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-08 14:57:32.678 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-08 14:57:33.122 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 459.1536ms
+2025-12-08 14:57:33.157 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-08 14:57:33.157 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/_vs/browserLink - null null
+2025-12-08 14:57:33.189 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 34.9846ms
+2025-12-08 14:57:33.297 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/_vs/browserLink - 200 null text/javascript; charset=UTF-8 140.0409ms
+2025-12-08 14:57:33.414 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-08 14:57:33.477 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.5379ms
+2025-12-08 15:01:49.247 +07:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-08 15:01:49.407 +07:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-08 15:01:49.416 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-08 15:01:49.420 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-08 15:01:49.508 +07:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-08 15:01:49.542 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-08 15:01:49.980 +07:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Posts] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-08 15:01:50.281 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-08 15:01:50.837 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-08 15:01:50.840 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-08 15:01:50.958 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-08 15:01:50.961 +07:00 [INF] Hosting environment: Development
+2025-12-08 15:01:50.962 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-08 15:01:52.356 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-08 15:01:52.789 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 448.1156ms
+2025-12-08 15:01:52.818 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-08 15:01:52.818 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/_vs/browserLink - null null
+2025-12-08 15:01:52.840 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 22.6313ms
+2025-12-08 15:01:52.917 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.9231ms
+2025-12-08 15:01:52.974 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-08 15:01:53.020 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.5549ms
