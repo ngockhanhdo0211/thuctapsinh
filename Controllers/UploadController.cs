@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using UnifiedLearningApi.DTOs.Upload;
 using UnifiedLearningApi.Services.Interfaces;
 using UnifiedLearningApi.DTOs.Uploads; // ← cái này nếu không xài thì xóa
-
 namespace UnifiedLearningApi.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class UploadController : ControllerBase

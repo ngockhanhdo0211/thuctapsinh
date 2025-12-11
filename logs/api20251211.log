@@ -48,3 +48,312 @@ ORDER BY [MigrationId];
 2025-12-11 14:51:43.557 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
 2025-12-11 14:51:43.700 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.0564ms
 2025-12-11 14:53:00.941 +07:00 [INF] Application is shutting down...
+2025-12-11 14:57:25.974 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 14:57:26.048 +07:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 14:57:26.053 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 14:57:26.056 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 14:57:26.125 +07:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-11 14:57:26.144 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-11 14:57:26.283 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-11 14:57:26.374 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-11 14:57:26.461 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-11 14:57:26.463 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-11 14:57:26.464 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 14:57:26.465 +07:00 [INF] Hosting environment: Development
+2025-12-11 14:57:26.466 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-11 14:57:34.825 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 14:57:35.023 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 202.0923ms
+2025-12-11 14:57:35.506 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 14:57:35.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 140.7134ms
+2025-12-11 15:00:45.300 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Upload/avatar - multipart/form-data; boundary=----WebKitFormBoundarytTRFWUa7uxQDzD7M 17593
+2025-12-11 15:00:45.359 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.UploadController.UploadAvatar (UnifiedLearningApi)'
+2025-12-11 15:00:45.468 +07:00 [INF] Route matched with {action = "UploadAvatar", controller = "Upload"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadAvatar(UnifiedLearningApi.DTOs.Upload.AvatarUploadDto) on controller UnifiedLearningApi.Controllers.UploadController (UnifiedLearningApi).
+2025-12-11 15:00:45.900 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-11 15:00:45.936 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.UploadController.UploadAvatar (UnifiedLearningApi) in 463.8171ms
+2025-12-11 15:00:45.940 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.UploadController.UploadAvatar (UnifiedLearningApi)'
+2025-12-11 15:00:45.943 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Upload/avatar - 200 null application/json; charset=utf-8 643.7776ms
+2025-12-11 15:30:21.904 +07:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 15:30:22.084 +07:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 15:30:22.093 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 15:30:22.100 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 15:30:22.254 +07:00 [INF] Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-11 15:30:22.281 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-11 15:30:22.567 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-11 15:30:22.814 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-11 15:30:22.980 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-11 15:30:22.982 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-11 15:30:23.067 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 15:30:23.069 +07:00 [INF] Hosting environment: Development
+2025-12-11 15:30:23.074 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-11 15:30:25.776 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/swagger/index.html - null null
+2025-12-11 15:30:26.372 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/swagger/index.html - 200 null text/html;charset=utf-8 614.8789ms
+2025-12-11 15:30:26.493 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/_vs/browserLink - null null
+2025-12-11 15:30:26.493 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-11 15:30:26.529 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 36.0517ms
+2025-12-11 15:30:26.784 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 292.0426ms
+2025-12-11 15:30:26.962 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/swagger/v1/swagger.json - null null
+2025-12-11 15:30:27.005 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.9776ms
+2025-12-11 15:31:54.517 +07:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 15:31:54.669 +07:00 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 15:31:54.677 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 15:31:54.681 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 15:31:54.796 +07:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-11 15:31:54.829 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-11 15:31:55.088 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-11 15:31:55.303 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-11 15:31:55.445 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-11 15:31:55.448 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-11 15:31:55.592 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 15:31:55.596 +07:00 [INF] Hosting environment: Development
+2025-12-11 15:31:55.599 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-11 15:31:56.687 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/swagger/index.html - null null
+2025-12-11 15:31:57.186 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/swagger/index.html - 200 null text/html;charset=utf-8 514.0283ms
+2025-12-11 15:31:57.300 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-11 15:31:57.300 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/_vs/browserLink - null null
+2025-12-11 15:31:57.318 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 16.8763ms
+2025-12-11 15:31:57.410 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.4516ms
+2025-12-11 15:31:57.810 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5079/swagger/v1/swagger.json - null null
+2025-12-11 15:31:57.849 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5079/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.2532ms
+2025-12-11 15:35:57.826 +07:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 15:35:57.889 +07:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 15:35:57.893 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 15:35:57.896 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 15:35:57.966 +07:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-11 15:35:57.977 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-11 15:35:58.091 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-11 15:35:58.160 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-11 15:35:58.214 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-11 15:35:58.215 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-11 15:35:58.216 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 15:35:58.216 +07:00 [INF] Hosting environment: Development
+2025-12-11 15:35:58.216 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-11 15:36:05.925 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 15:36:06.084 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 159.6476ms
+2025-12-11 15:36:06.258 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 15:36:06.383 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.288ms
+2025-12-11 15:36:48.821 +07:00 [INF] Application is shutting down...
+2025-12-11 15:36:55.127 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 15:36:55.179 +07:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 15:36:55.184 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 15:36:55.187 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 15:36:55.213 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-11 15:36:55.224 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-11 15:36:55.276 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-11 15:36:55.305 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-11 15:36:55.341 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-11 15:36:55.342 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-11 15:36:55.343 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 15:36:55.343 +07:00 [INF] Hosting environment: Development
+2025-12-11 15:36:55.344 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-11 15:36:56.597 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 15:36:56.651 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 53.5301ms
+2025-12-11 15:36:56.719 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 15:36:56.823 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.6463ms
+2025-12-11 15:53:58.629 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 15:53:58.668 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 41.6433ms
+2025-12-11 15:53:58.945 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 15:53:59.012 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.0815ms
+2025-12-11 15:56:58.225 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 15:56:58.233 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 8.2624ms
+2025-12-11 15:56:58.322 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 15:56:58.336 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.3679ms
+2025-12-11 15:57:02.568 +07:00 [INF] Application is shutting down...
+2025-12-11 16:02:07.126 +07:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 16:02:07.200 +07:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 16:02:07.205 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 16:02:07.207 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 16:02:07.412 +07:00 [INF] Executed DbCommand (194ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-11 16:02:07.422 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-11 16:02:07.504 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-11 16:02:07.529 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-11 16:02:07.564 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-11 16:02:07.565 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-11 16:02:07.566 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 16:02:07.566 +07:00 [INF] Hosting environment: Development
+2025-12-11 16:02:07.567 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-11 16:02:09.638 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 16:02:09.754 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 118.0564ms
+2025-12-11 16:02:10.174 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 16:02:10.298 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.4184ms
+2025-12-11 16:02:21.831 +07:00 [INF] Application is shutting down...
+2025-12-11 16:02:30.653 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 16:02:30.709 +07:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 16:02:30.713 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-11 16:02:30.714 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-11 16:02:30.735 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-11 16:02:30.746 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-11 16:02:30.799 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-11 16:02:30.828 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-11 16:02:30.862 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-11 16:02:30.863 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-11 16:02:30.864 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-11 16:02:30.864 +07:00 [INF] Hosting environment: Development
+2025-12-11 16:02:30.865 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-11 16:02:31.117 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 16:02:31.174 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 57.6597ms
+2025-12-11 16:02:31.229 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 16:02:31.353 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 123.6095ms
+2025-12-11 16:02:32.314 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 16:02:32.319 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 4.7124ms
+2025-12-11 16:02:32.379 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 16:02:32.393 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.7199ms
+2025-12-11 16:02:33.051 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 16:02:33.055 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 3.8423ms
+2025-12-11 16:02:33.105 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 16:02:33.117 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.4227ms
+2025-12-11 16:02:33.737 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 16:02:33.740 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 3.7014ms
+2025-12-11 16:02:33.790 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 16:02:33.803 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.7982ms
+2025-12-11 16:04:33.303 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Auth/register - application/json 76
+2025-12-11 16:04:33.347 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi)'
+2025-12-11 16:04:33.387 +07:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(UnifiedLearningApi.DTOs.Auth.RegisterDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-11 16:04:33.833 +07:00 [INF] Executed DbCommand (127ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-11 16:04:34.178 +07:00 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [User] ([Email], [PasswordHash], [Role])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2025-12-11 16:04:34.199 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-12-11 16:04:34.204 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi) in 808.1128ms
+2025-12-11 16:04:34.208 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Register (UnifiedLearningApi)'
+2025-12-11 16:04:34.211 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Auth/register - 200 null text/plain; charset=utf-8 907.813ms
+2025-12-11 16:05:16.334 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Auth/login - application/json 58
+2025-12-11 16:05:16.340 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-11 16:05:16.346 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(UnifiedLearningApi.DTOs.Auth.LoginDto) on controller UnifiedLearningApi.Controllers.AuthController (UnifiedLearningApi).
+2025-12-11 16:05:17.101 +07:00 [INF] Executed DbCommand (573ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[PasswordHash], [t].[Role], [r].[Id], [r].[ExpiresAt], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role]
+    FROM [User] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshTokens] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-12-11 16:05:17.367 +07:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([ExpiresAt], [IsRevoked], [Token], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-12-11 16:05:17.370 +07:00 [INF] Executing OkObjectResult, writing value of type 'UnifiedLearningApi.DTOs.Auth.AuthResponseDto'.
+2025-12-11 16:05:17.377 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi) in 1028.2475ms
+2025-12-11 16:05:17.378 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.AuthController.Login (UnifiedLearningApi)'
+2025-12-11 16:05:17.379 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Auth/login - 200 null application/json; charset=utf-8 1045.15ms
+2025-12-11 16:08:10.829 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/api/Posts - null null
+2025-12-11 16:08:10.838 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-11 16:08:10.843 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-11 16:08:10.844 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/api/Posts - 401 0 null 15.3095ms
+2025-12-11 16:10:04.264 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Upload/avatar - multipart/form-data; boundary=----WebKitFormBoundaryryqWVJVYvvUNJ089 14564
+2025-12-11 16:10:04.275 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-11 16:10:04.276 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-11 16:10:04.278 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Upload/avatar - 401 0 null 14.0803ms
+2025-12-11 16:10:58.170 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Upload/avatar - multipart/form-data; boundary=----WebKitFormBoundaryhuIYa2hIuo3A4uUT 141
+2025-12-11 16:10:58.205 +07:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-12-11 16:10:58.253 +07:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-12-11 16:10:58.256 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-11 16:10:58.258 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-11 16:10:58.258 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Upload/avatar - 401 0 null 88.7491ms
+2025-12-11 16:13:25.098 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 16:13:25.115 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 17.6171ms
+2025-12-11 16:13:25.287 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 16:13:25.334 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.7017ms
+2025-12-11 16:13:31.170 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-11 16:13:31.175 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 5.4099ms
+2025-12-11 16:13:31.239 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-11 16:13:31.249 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.1042ms
+2025-12-11 16:16:05.795 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Upload/avatar - multipart/form-data; boundary=----WebKitFormBoundaryHkmUQUMDNJt5JwfP 14564
+2025-12-11 16:16:05.801 +07:00 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-12-11 16:16:05.804 +07:00 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-12-11 16:16:05.806 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-11 16:16:05.810 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-11 16:16:05.812 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Upload/avatar - 401 0 null 17.3896ms
+2025-12-11 16:19:23.464 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7166/api/Upload/avatar - multipart/form-data; boundary=----WebKitFormBoundaryPBBlBR65cJvkf8Ay 14564
+2025-12-11 16:19:23.594 +07:00 [INF] Executing endpoint 'UnifiedLearningApi.Controllers.UploadController.UploadAvatar (UnifiedLearningApi)'
+2025-12-11 16:19:23.637 +07:00 [INF] Route matched with {action = "UploadAvatar", controller = "Upload"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UploadAvatar(UnifiedLearningApi.DTOs.Upload.AvatarUploadDto) on controller UnifiedLearningApi.Controllers.UploadController (UnifiedLearningApi).
+2025-12-11 16:19:23.779 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-11 16:19:23.790 +07:00 [INF] Executed action UnifiedLearningApi.Controllers.UploadController.UploadAvatar (UnifiedLearningApi) in 150.1212ms
+2025-12-11 16:19:23.791 +07:00 [INF] Executed endpoint 'UnifiedLearningApi.Controllers.UploadController.UploadAvatar (UnifiedLearningApi)'
+2025-12-11 16:19:23.793 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7166/api/Upload/avatar - 200 null application/json; charset=utf-8 329.261ms
+2025-12-11 16:22:32.522 +07:00 [INF] Application is shutting down...

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using UnifiedLearningApi.DTOs;
 using UnifiedLearningApi.Services.Interfaces;
 
@@ -6,6 +7,7 @@ namespace UnifiedLearningApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class PostsController : ControllerBase
     {
         private readonly IPostService _service;
@@ -27,6 +29,7 @@ namespace UnifiedLearningApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "User,Admin")]
         public async Task<IActionResult> Create(PostCreateDto dto)
         {
             var created = await _service.CreateAsync(dto);
@@ -34,6 +37,7 @@ namespace UnifiedLearningApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var ok = await _service.DeleteAsync(id);

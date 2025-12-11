@@ -7,6 +7,7 @@ namespace UnifiedLearningApi.Controllers
     // Đánh dấu đây là API Controller
     [ApiController]
     [Route("api/[controller]")]
+    [AllowAnonymous]
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _auth;

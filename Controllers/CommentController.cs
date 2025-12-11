@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using UnifiedLearningApi.DTOs;
 using UnifiedLearningApi.Services.Interfaces;
 
 namespace UnifiedLearningApi.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CommentsController : ControllerBase
