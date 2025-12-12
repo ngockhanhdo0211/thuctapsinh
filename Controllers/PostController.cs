@@ -19,7 +19,7 @@ namespace UnifiedLearningApi.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAll() =>
-            Ok(await _service.GetPostsAsync());
+            Ok(await _service.GetPostsAsync());s
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
@@ -35,7 +35,6 @@ namespace UnifiedLearningApi.Controllers
             var created = await _service.CreateAsync(dto);
             return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
         }
-
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)

@@ -1,6 +1,4 @@
-﻿
-
-using System.IdentityModel.Tokens.Jwt;
+﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -27,17 +25,21 @@ namespace UnifiedLearningApi.Services
         // REGISTER
         public async Task<bool> RegisterAsync(RegisterDto dto)
         {
+            // Kiểm tra email đã tồn tại trong database hay chưa
             if (await _db.User.AnyAsync(u => u.Email == dto.Email))
                 return false;
+                // Mật khẩu bằng BCrypt để bảo mật
 
             var hash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+            // Tạo user mới
 
             var user = new User
             {
                 Email = dto.Email,
-                PasswordHash = hash,
+                PasswordHash = hash, // lưu thành hash, không lưu mật khẩu chính
                 Role = dto.Role
             };
+            // Thêm user vào database 
 
             _db.User.Add(user);
             await _db.SaveChangesAsync();
@@ -47,14 +49,17 @@ namespace UnifiedLearningApi.Services
         // LOGIN
         public async Task<AuthResponseDto?> LoginAsync(LoginDto dto)
         {
+            // Lấy user theo email, kèm refresh tokens
             var user = await _db.User
                 .Include(u => u.RefreshTokens)
                 .FirstOrDefaultAsync(u => u.Email == dto.Email);
 
             if (user == null) return null;
+            // Kiểm tra mật khẩu có đúng không bằng BCrypt
 
             if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
                 return null;
+                // trả về access token + refresh token
 
             return await GenerateTokensAsync(user);
         }
@@ -62,6 +67,7 @@ namespace UnifiedLearningApi.Services
         // REFRESH TOKEN
         public async Task<AuthResponseDto?> RefreshTokenAsync(string refreshToken)
         {
+            // tìm refresh token hợp lệ trong database
             var token = await _db.RefreshTokens
                 .Include(r => r.User)
                 .FirstOrDefaultAsync(r =>
@@ -73,6 +79,7 @@ namespace UnifiedLearningApi.Services
 
             return await GenerateTokensAsync(token.User);
         }
+        // Tạo Access & Refresh token
 
         private async Task<AuthResponseDto> GenerateTokensAsync(User user)
         {
@@ -95,6 +102,7 @@ namespace UnifiedLearningApi.Services
                 RefreshToken = refresh
             };
         }
+        // Tạo JWWT TOKEN
 
         private string GenerateJwtToken(User user)
         {
@@ -102,6 +110,7 @@ namespace UnifiedLearningApi.Services
                 Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            //Thông tin nhúng trong token
 
             var claims = new[]
             {
@@ -109,10 +118,11 @@ namespace UnifiedLearningApi.Services
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Role, user.Role)
             };
+            // Tạo JWWT token
 
             var token = new JwtSecurityToken(
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(20),
+                expires: DateTime.UtcNow.AddMinutes(20), // Thời hạn access token trong vòng 20p
                 signingCredentials: creds
             );
 
