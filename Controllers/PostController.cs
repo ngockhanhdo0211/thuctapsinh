@@ -6,7 +6,8 @@ using UnifiedLearningApi.Services.Interfaces;
 namespace UnifiedLearningApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")] 
     [Authorize]
     public class PostsController : ControllerBase
     {
@@ -19,7 +20,7 @@ namespace UnifiedLearningApi.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAll() =>
-            Ok(await _service.GetPostsAsync());s
+            Ok(await _service.GetPostsAsync());
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)

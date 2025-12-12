@@ -424,3 +424,103 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2025-12-12 10:54:58.800 +07:00 [INF] AuthenticationScheme: Bearer was forbidden.
 2025-12-12 10:54:58.809 +07:00 [INF] Request finished HTTP/2 DELETE https://localhost:7166/api/Posts/3 - 403 0 null 27.3505ms
 2025-12-12 11:46:17.039 +07:00 [INF] Application is shutting down...
+2025-12-12 14:18:42.253 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 14:18:42.308 +07:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 14:18:42.311 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 14:18:42.312 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 14:18:42.367 +07:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-12 14:18:42.376 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-12 14:18:42.437 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-12 14:18:42.466 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-12 14:18:42.499 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-12 14:18:42.500 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-12 14:18:42.501 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-12 14:18:42.501 +07:00 [INF] Hosting environment: Development
+2025-12-12 14:18:42.501 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-12 14:18:46.909 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-12 14:18:47.000 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 91.8906ms
+2025-12-12 14:18:47.517 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-12 14:18:47.649 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.9795ms
+2025-12-12 14:23:09.792 +07:00 [INF] Application is shutting down...
+2025-12-12 14:23:26.664 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 14:23:26.730 +07:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 14:23:26.733 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 14:23:26.735 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 14:23:26.761 +07:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-12 14:23:26.772 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-12 14:23:46.171 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 14:23:46.225 +07:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 14:23:46.229 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 14:23:46.231 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 14:23:46.251 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-12 14:23:46.260 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-12 14:24:00.483 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 14:24:00.520 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 14:24:00.522 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 14:24:00.524 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 14:24:00.538 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-12 14:24:00.549 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-12 14:24:00.606 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-12 14:24:00.632 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-12 14:24:00.663 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-12 14:24:00.664 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-12 14:24:00.665 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-12 14:24:00.665 +07:00 [INF] Hosting environment: Development
+2025-12-12 14:24:00.665 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-12 14:24:04.661 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-12 14:24:04.742 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 82.4421ms
+2025-12-12 14:24:04.953 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-12 14:24:05.105 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.0108ms
+2025-12-12 23:24:01.686 +07:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 23:24:01.758 +07:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 23:24:01.761 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-12 23:24:01.764 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-12 23:24:01.880 +07:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-12 23:24:01.888 +07:00 [INF] No migrations were applied. The database is already up to date.
+2025-12-12 23:24:01.956 +07:00 [INF] User profile is available. Using 'C:\Users\Do Ngoc Khanh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-12 23:24:01.982 +07:00 [WRN] Overriding address(es) 'http://localhost:5079'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-12-12 23:24:02.015 +07:00 [INF] Now listening on: http://localhost:5079
+2025-12-12 23:24:02.017 +07:00 [INF] Now listening on: https://localhost:7166
+2025-12-12 23:24:02.018 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-12 23:24:02.018 +07:00 [INF] Hosting environment: Development
+2025-12-12 23:24:02.019 +07:00 [INF] Content root path: C:\Users\Do Ngoc Khanh\tts\UnifiedLearningApi\UnifiedLearningApi
+2025-12-12 23:24:11.830 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - null null
+2025-12-12 23:24:12.046 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - 200 null text/html;charset=utf-8 219.624ms
+2025-12-12 23:24:12.253 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - null null
+2025-12-12 23:24:12.485 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 232.0419ms
+2025-12-12 23:24:17.768 +07:00 [INF] Application is shutting down...

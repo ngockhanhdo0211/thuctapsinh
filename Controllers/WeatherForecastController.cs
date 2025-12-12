@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace UnifiedLearningApi.Controllers
 {
-    [ApiController]
+    [ApiController] 
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {

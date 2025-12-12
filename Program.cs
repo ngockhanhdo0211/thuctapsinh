@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
@@ -14,39 +16,29 @@ using UnifiedLearningApi.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ---------------------------
-// 1. Serilog
-// ---------------------------
+/* ========== 1. SERILOG ========== */
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("logs/api.log", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 builder.Host.UseSerilog();
 
-// ---------------------------
-// 2. Kestrel Ports
-// ---------------------------
+/* ========== 2. KESTREL PORTS ========== */
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenLocalhost(5079);          
+    options.ListenLocalhost(5079);
     options.ListenLocalhost(7166, listen => listen.UseHttps());
 });
 
-// ---------------------------
-// 3. Database
-// ---------------------------
+/* ========== 3. DATABASE ========== */
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
-// ---------------------------
-// 4. AutoMapper
-// ---------------------------
+/* ========== 4. AUTOMAPPER ========== */
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-// ---------------------------
-// 5. Dependency Injection
-// ---------------------------
+/* ========== 5. DEPENDENCY INJECTION ========== */
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
@@ -55,9 +47,7 @@ builder.Services.AddScoped<ICommentTreeService, CommentTreeService>();
 builder.Services.AddScoped<IUploadService, UploadService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
-// ---------------------------
-// 6. JWT Authentication
-// ---------------------------
+/* ========== 6. JWT AUTHENTICATION ========== */
 var jwtKey = builder.Configuration["Jwt:Key"];
 var keyBytes = Encoding.UTF8.GetBytes(jwtKey);
 
@@ -77,9 +67,22 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// ---------------------------
-// 7. Swagger + JWT Support
-// ---------------------------
+/* ========== 7. API VERSIONING ========== */
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ReportApiVersions = true;
+});
+
+// Explorer để Swagger nhận version
+builder.Services.AddVersionedApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'VVV"; // v1, v2, …
+    options.SubstituteApiVersionInUrl = true;
+});
+
+/* ========== 8. SWAGGER ========== */
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -89,6 +92,7 @@ builder.Services.AddSwaggerGen(c =>
         Version = "v1"
     });
 
+    // Thêm nút AUTH cho Swagger
     c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -96,7 +100,7 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "bearer",
         BearerFormat = "JWT",
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Description = "Nhập token theo dạng: Bearer {your token}"
+        Description = "Nhập token theo format: Bearer {your token}"
     });
 
     c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
@@ -115,40 +119,32 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// ---------------------------
-// 8. Controllers
-// ---------------------------
+/* ========== 9. CONTROLLERS ========== */
 builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// ---------------------------
-// 9. Migration
-// ---------------------------
+/* ========== 10. MIGRATION AUTO APPLY ========== */
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     db.Database.Migrate();
 }
 
-// ---------------------------
-// 10. Swagger UI
-// ---------------------------
+/* ========== 11. SWAGGER UI ========== */
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "UnifiedLearningApi v1");
 });
 
-// ---------------------------
-// 11. Middlewares
-// ---------------------------
+/* ========== 12. MIDDLEWARES ========== */
 app.UseMiddleware<CorrelationIdMiddleware>();
 app.UseMiddleware<ErrorHandlingMiddleware>();
 
 app.UseStaticFiles();
 
-app.UseAuthentication();   // <---- QUAN TRỌNG
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

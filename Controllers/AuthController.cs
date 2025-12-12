@@ -7,7 +7,8 @@ namespace UnifiedLearningApi.Controllers
 {
     // Đánh dấu đây là API Controller
     [ApiController]
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [AllowAnonymous]
     public class AuthController : ControllerBase
     {
